@@ -15,6 +15,7 @@
 #define PLATFORM_MAC      2
 #define PLATFORM_UNIX     3
 #define PACKET_SIZE 1000
+#define FILE_NAME_SIZE	15
 
 #if defined(_WIN32)
 #define PLATFORM PLATFORM_WINDOWS

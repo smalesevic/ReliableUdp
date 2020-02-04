@@ -153,11 +153,6 @@ int main(int argc, char* argv[])
 		}
 		if (sscanf_s(argv[2], "%s", &fName))	//changed 'sscanf' to 'sscanf_s'
 		{
-			/*
-				1. Read file 
-				2. Find total number of packets 
-				3. Split into packets and add to allPackets vector 
-			*/
 			char bytesName = sizeof(fName);
 
 			// Header contains [packetID][numBytesToRead] 
@@ -285,7 +280,6 @@ int main(int argc, char* argv[])
 				if (lastPID == 0)
 				{
 					firstPacket.firstPacket = true;
-					break;
 				}
 				
 			}
